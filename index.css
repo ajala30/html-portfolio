@@ -1,0 +1,161 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+  box-sizing: border-box;
+}
+body{
+  background-color: rgb(5, 14, 14);
+color: white;  
+
+}
+#header{
+  width: 100%;
+  height: 100vh;
+  background-image: url("./images/back.PNG");
+  background-size: cover;
+  background-position: center;
+
+}{
+  
+}
+
+.conta{
+  padding: 10px  10%;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.logo, img{
+  width: 110px;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  text-decoration: none;
+  margin: 10px 20px;
+ 
+}
+li,.link {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+
+}
+ .link, a::after{
+    content: '';
+  width: 0;
+  height: 3px;
+  background-color: aliceblue;
+  position: absolute;  
+  left: 0;
+  bottom: -6px;
+  transition: 0.9s;
+}
+.link, a:hover::after{
+  width: 100%;
+}
+.header-text{
+  font-size: 1.1rem;
+  margin-top: 20%;
+  color: white;
+ text-transform: capitalize;
+}
+.ajala{
+  color: pink;
+}
+#about{
+  background-color: rgb(28, 30, 30);
+  padding: 80px 0;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about-col-1{
+  flex-basis: 35%;
+}
+ .me, img{
+  width: 100%;
+  
+  border-radius: 50%;
+
+ }
+.about-col-2{
+flex-basis: 60%;
+}
+.lord{
+  font-size: 20px;
+  list-style: 2px;
+  padding: 20px;
+}
+.jes{
+  font-size: 2.0rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-transform: capitalize;
+  font-weight: 300px;
+}
+.tab{
+  display: flex;
+  margin: 20px 0 40px;
+  gap: 10px;
+
+}
+.skills{
+  margin-right: 50px;
+  font-size: 50px;
+  font-weight: 400;
+  cursor: pointer;
+  position: relative;
+  text-transform: capitalize;
+
+}
+.skills::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background-color: aliceblue;
+  position: absolute;  
+  left: 0;
+  bottom: -6px;
+  transition: 0.9s;
+  
+}
+.skills.active::after{
+  width: 60%;
+}
+.tabcont, ul li{
+list-style: none;
+margin: 10px 0;
+text-transform: capitalize;
+font-size:1rem ;
+
+}
+.aja{
+  color: pink;
+  font-size: 12px;
+ 
+}
+.tabcont{
+  display: none;
+}
+.tabcont.active-tab{
+display: block;
+}
+
+
+
+#new {
+  Color: red;
+  font-size: 24px;
+}
+#old {
+  color: blue;
+  font-size: 32px;
+}
